@@ -10,12 +10,12 @@ a {
   text-decoration: none;
 }
 h1,
-h2 {
-  margin-bottom: 10px;
+h2,
+li,
+#img-caption {
+  padding-bottom: 1rem;
 }
-li {
-  margin-bottom: 1rem;
-}
+
 span {
   font-weight: bold;
 }
@@ -28,32 +28,44 @@ body {
 }
 
 #main {
-  display: grid;
   background-color: rgb(250, 239, 224);
+  grid-template-columns: 1fr;
+  margin: auto;
 }
 
 #title {
   background-color: cadetblue;
   padding: 2rem;
+  margin: auto;
 }
 
 #img-div {
   background-color: cornflowerblue;
-  padding: 2rem;
+  margin: auto;
+  margin: 10px 0px;
 }
 
 #image {
-  width: 600px;
+  width: 100%;
+  max-width: 1200px;
   padding-bottom: 1rem;
 }
 
 #tribute-info {
   background-color: rgb(113, 255, 201);
   padding: 2rem;
+  margin: auto;
 }
 
 #quote,
 #tribute-moreinfo {
   background-color: rgb(30, 180, 210);
   padding: 1rem;
+  margin: auto;
+}
+
+@media (min-width: 800px) {
+  #main {
+    width: 74vw;
+  }
 }
