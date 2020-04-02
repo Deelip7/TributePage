@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2 {
+  margin-bottom: 10px;
+}
+li {
+  margin-bottom: 1rem;
+}
+span {
+  font-weight: bold;
+}
+
+body {
+  font-family: "Comic Neue", Sans-Serif;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+#main {
+  display: grid;
+  background-color: rgb(250, 239, 224);
+}
+
+#title {
+  background-color: cadetblue;
+  padding: 2rem;
+}
+
+#img-div {
+  background-color: cornflowerblue;
+  padding: 2rem;
+}
+
+#image {
+  width: 600px;
+  padding-bottom: 1rem;
+}
+
+#tribute-info {
+  background-color: rgb(113, 255, 201);
+  padding: 2rem;
+}
+
+#quote,
+#tribute-moreinfo {
+  background-color: rgb(30, 180, 210);
+  padding: 1rem;
+}
