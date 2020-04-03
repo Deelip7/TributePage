@@ -12,6 +12,7 @@ a {
 h1,
 h2,
 li,
+p,
 #img-caption {
   padding-bottom: 1rem;
 }
@@ -25,10 +26,11 @@ body {
   font-size: 16px;
   text-align: center;
   letter-spacing: 0.5px;
+  margin: auto;
 }
 
 #main {
-  background-color: rgb(250, 239, 224);
+  background-color: rgb(219, 217, 215);
   grid-template-columns: 1fr;
   margin: auto;
 }
@@ -40,32 +42,42 @@ body {
 }
 
 #img-div {
-  background-color: cornflowerblue;
   margin: auto;
-  margin: 10px 0px;
+  margin: 20px 0px;
+  background-color: darkgrey;
 }
 
 #image {
   width: 100%;
-  max-width: 1200px;
-  padding-bottom: 1rem;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#img-caption {
+  margin: auto;
+  max-width: 1000px;
+  padding-top: 2rem;
 }
 
 #tribute-info {
-  background-color: rgb(113, 255, 201);
   padding: 2rem;
   margin: auto;
+  max-width: 1000px;
 }
 
 #quote,
 #tribute-moreinfo {
-  background-color: rgb(36, 190, 221);
   padding: 1rem;
   margin: auto;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1100px) {
   #main {
-    width: 75vw;
+    padding: 0.8rem 1.5rem;
+  }
+  #image {
+    padding-top: 1rem;
+    max-width: 1000px;
   }
 }
