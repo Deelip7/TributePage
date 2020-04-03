@@ -8,17 +8,33 @@
 }
 a {
   text-decoration: none;
-}
-h1,
-h2,
-li,
-p,
-#img-caption {
-  padding-bottom: 1rem;
+  color: rgb(40, 50, 115);
 }
 
-span {
-  font-weight: bold;
+p,
+h2,
+#title,
+blockquote,
+#tribute-info,
+#img-caption {
+  padding: 1rem;
+}
+
+a::after {
+  content: "\f35d";
+  padding-left: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-size: 0.8rem;
+}
+
+#title {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+  border: dashed 0.1rem rgba(118, 118, 118, 0.451);
+  margin: auto;
+  margin: 1rem;
 }
 
 body {
@@ -26,58 +42,50 @@ body {
   font-size: 16px;
   text-align: center;
   letter-spacing: 0.5px;
-  margin: auto;
+  line-height: 1.5;
 }
 
 #main {
   background-color: rgb(219, 217, 215);
-  grid-template-columns: 1fr;
-  margin: auto;
-}
-
-#title {
-  background-color: cadetblue;
-  padding: 2rem;
-  margin: auto;
 }
 
 #img-div {
-  margin: auto;
-  margin: 20px 0px;
-  background-color: darkgrey;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 10px -2px #00000045;
 }
 
 #image {
   width: 100%;
-  height: auto;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
+
 #img-caption {
   margin: auto;
   max-width: 1000px;
-  padding-top: 2rem;
 }
 
 #tribute-info {
-  padding: 2rem;
   margin: auto;
-  max-width: 1000px;
+  max-width: 700px;
+  padding: 1rem 2.2rem;
 }
 
-#quote,
-#tribute-moreinfo {
-  padding: 1rem;
-  margin: auto;
+li,
+blockquote {
+  text-align: left;
+  padding-bottom: 1.5rem;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 900px) {
   #main {
-    padding: 0.8rem 1.5rem;
+    padding: 2rem 1.5rem;
+    border-radius: 0.4rem;
+    margin: 0.7rem;
   }
   #image {
-    padding-top: 1rem;
+    padding: 2rem;
     max-width: 1000px;
   }
 }
