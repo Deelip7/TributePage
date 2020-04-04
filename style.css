@@ -11,13 +11,19 @@ a {
   color: rgb(40, 50, 115);
 }
 
+body {
+  font-family: "Comic Neue", Sans-Serif;
+  color: #3d3d3d;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
 p,
-h2,
-#title,
-blockquote,
-#tribute-info,
+h3,
 #img-caption {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 a::after {
@@ -29,6 +35,11 @@ a::after {
 
 #title {
   font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 1rem;
+}
+
+#title p {
+  font-size: 1.2rem;
 }
 
 hr {
@@ -37,16 +48,9 @@ hr {
   margin: 1rem;
 }
 
-body {
-  font-family: "Comic Neue", Sans-Serif;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  line-height: 1.5;
-}
-
 #main {
   background-color: rgb(219, 217, 215);
+  padding-bottom: 4rem;
 }
 
 #img-div {
@@ -69,7 +73,7 @@ body {
 #tribute-info {
   margin: auto;
   max-width: 700px;
-  padding: 1rem 2.2rem;
+  padding: 3rem 2.2rem;
 }
 
 li,
@@ -80,7 +84,7 @@ blockquote {
 
 @media (min-width: 900px) {
   #main {
-    padding: 2rem 1.5rem;
+    padding: 3rem 1.5rem;
     border-radius: 0.4rem;
     margin: 0.7rem;
   }
