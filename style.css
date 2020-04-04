@@ -87,7 +87,7 @@ blockquote {
 @media (min-width: 900px) {
   #main {
     padding: 3rem 1.5rem;
-    border-radius: 0.4rem;
+    border-radius: 0.5rem;
     margin: 0.7rem;
   }
   #image {
